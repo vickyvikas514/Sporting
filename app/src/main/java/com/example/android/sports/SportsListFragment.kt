@@ -16,12 +16,13 @@
 
 package com.example.android.sports
 
+import android.app.Fragment
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.OnBackPressedCallback
-import androidx.fragment.app.Fragment
+
 import androidx.fragment.app.activityViewModels
 import androidx.slidingpanelayout.widget.SlidingPaneLayout
 import com.example.android.sports.databinding.FragmentSportsListBinding
@@ -30,7 +31,7 @@ import com.example.android.sports.databinding.FragmentSportsListBinding
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
 
-class SportsListFragment : Fragment() {
+class SportsListFragment : androidx.fragment.app.Fragment() {
 
     private val sportsViewModel: SportsViewModel by activityViewModels()
 
